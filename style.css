@@ -19,7 +19,8 @@ body {
 .main-headline {
 	font-family: Utopia;
 	font-size: 2rem;
-	padding: .1rem
+	padding: .1rem;
+	margin-top: .5rem
 }
 
 .main-article {
@@ -64,6 +65,27 @@ body {
 	}
 }
 
+a {
+	color: black;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { 
+	text-decoration: none; 
+	color: #714627;
+}
+
+a:active { text-decoration: none; }
+
+.container-left {
+	display: inline-flex;
+}
+
 @media only screen and (max-width: 600px) {
 	.article {
 		padding: 1rem;
@@ -81,16 +103,31 @@ body {
 	}
 }
 
-/* @media only screen and (min-width: 600px) {
-	.hidden-logo {
+@media only screen and (max-width: 767px) {
+	.button {
 		display: none;
 	}
-} */
+}
+
+@media only screen and (max-width: 767px) {
+	#menu2 {
+		visibility: visible;
+		display: inline-flex;
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media (min-width: 767px) {
+	#menu2 {
+		visibility: hidden;
+		width: 1px;
+		height:1px;
+	}
+}
 
 #article-content {
 	margin: 1.5rem;
 	margin-top: .5rem;
-	/* max-width: 1300px; */
 }
 
 .container {
@@ -101,7 +138,6 @@ body {
 }
 
 @media only screen and (min-width: 793px) {
-
 	.side-bar {
 		position: relative;
 	}
@@ -117,8 +153,6 @@ body {
 		/* border-right: 2px solid black; */
 		/* width: 17%; */
 	}
-
-
 }
 
 @media only screen and (min-width: 770px) {
