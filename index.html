@@ -1,0 +1,266 @@
+<!-- Used this template https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_template1 as a starting point -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Brown Noser Mock Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="style.css" rel="stylesheet" />  
+	<link href="https://fonts.googleapis.com/css?family=Adobe+Text Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Utopia+Std&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=FranklinGothic+URW&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="p-4 container-xxl" id="top_header">
+		<!-- <div class="row justify-content-lg-center d-flex align-items-center">
+			<div class="col-sm-2 d-flex justify-content-around">
+				<div class="container-left"> 
+					<img src="img/menubutton.png" class="img-responsive button" id="menu" alt="menu button">
+					<img src="img/searchbutton.png" class="img-responsive button" id="search" alt="search button">
+				</div>
+			</div>
+			<div class="col-md d-flex align-items-center">
+				<div class="container"> 
+					<img src="img/brownnose.png" class="img-responsive custom-icon" alt="Noser logo">
+					<h1 class="logo"><strong>THE BROWN NOSER</strong></h1>
+				</div>
+			</div>
+			<div class="col-sm-2 d-flex justify-content-around">
+				<div class="container-right"> 	
+					<img src="img/aboutbutton.png" onmouseover="hover(this)" onmouseout="unhover(this)" class="img-responsive button" id="about" alt="about button">
+					<img src="img/joinbutton.png" onmouseover="hover(this)" onmouseout="unhover(this)" class="img-responsive button" id="join" alt="join button">
+					</div>
+			</div>
+		</div> -->
+
+		
+		<div class="container-xxl d-flex justify-content-center align-items-center">
+			<nav class="navbar p-4 navbar-expand-sm container-xxl">
+				<!-- <a class="navbar-brand d-lg-none" href="#"><img src="logo.png"></a> -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
+						aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+						<img src="img/menubutton.png" class="img-responsive button" id="menu" alt="menu button">
+				</button>
+				<div class="d-flex justify-content-center">
+					<div class="collapse navbar-collapse" id="myNavbarToggler7">
+						<ul class="navbar-nav">
+								<li class="nav-item" style="margin-right: 0%;">
+										<a class="nav-link" id="navbarDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+											<div class="col-sm-2 d-flex justify-content-around align-items-center">
+												<img src="img/menubutton.png" class="img-responsive button" id="menu" alt="sections menu button">
+											</div>
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<li><a class="dropdown-item" href="#">Latest</a></li>
+											<li><a class="dropdown-item" href="#">Campus Life</a></li>
+											<li><a class="dropdown-item" href="#">Off Campus</a></li>
+										</ul>
+								</li>
+								<li class="nav-item" style="margin-right: 5%;">
+									<a class="nav-link" href="#">
+										<div class="col-sm-2 d-flex justify-content-around align-items-center">
+											<img src="img/searchbutton.png" onclick="changeSearch()" class="img-responsive button" id="search" style="padding-left: 30px" alt="search button">
+										</div>
+									</a>								
+								</li>
+								<div class="col-xxl d-flex align-items-center">
+									<div class="container"> 
+										<img src="img/brownnose.png" class="img-responsive custom-icon" alt="Noser logo">
+										<h1 class="logo"><strong>THE BROWN NOSER</strong></h1>
+									</div>
+								</div>					
+								<li class="nav-item" style="margin-left: 10%;">
+									<a class="nav-link" href="#">
+										<div class="col-sm-2 d-flex justify-content-around align-items-center">
+											<img src="img/aboutbutton.png" onmouseover="hover(this)" onmouseout="unhover(this)" class="img-responsive button" id="about" alt="about button">
+										</div>
+									</a>
+								</li>
+								<li class="nav-item" style="margin-left: 1%;">
+									<a class="nav-link" href="#">
+										<div class="col-sm-2 d-flex justify-content-around align-items-center">
+											<img src="img/joinbutton.png" onmouseover="hover(this)" onmouseout="unhover(this)" class="img-responsive button" id="join" alt="join button">
+										</div>
+									</a>								
+								</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="hidden-logo" style="display: none;"> 
+				<img src="img/brownnose.png" class="img-responsive custom-icon" alt="Noser logo">
+				<h1 class="logo"><strong>THE BROWN NOSER</strong></h1>
+			</div>
+
+		</div>
+		
+</div>
+	
+<!-- <nav class="navbar navbar-expand-sm navbar-dark center" id="navbar">
+  <div class="container-fluid">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="#interface">My Interface</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#summaries">Interview Summaries</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#maps">Empathy Maps</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#storyboard">Storyboard</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+<div id="article-content d-flex justify-content-center">
+<div class="container-xxl mt-2 pb-4 bottom-bar">
+  <div class="row d-inline-flex mt-3">
+		<div class="col-sm-2 side-bar-main">
+			<img src="img/latestbutton.png" onmouseover="hover(this)" onmouseout="unhover(this)" class="img-responsive cat-button" id="latest" alt="latest button">
+		</div>
+		<div class="col-md-5 main-article">
+			<img src="img/img1.jpg" class="img-fluid" alt="Responsive image">
+			<h3 class="main-headline">Headline headline headline</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="col-sm article">
+			<img src="img/img2.jpg" class="img-fluid" alt="Responsive image">
+			<h3 class="headline">Headline headline headline</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="col-sm article">
+			<h4 class="headline">Headline headline headline</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<!-- <div class="col-sm article">
+			<img src="img/img2.jpg" class="img-fluid" alt="Responsive image">
+			<h3 class="headline">Headline headline headline</h3>
+			<p>The kiosk ordering screen</p>
+		</div> -->
+  </div>
+</div>
+<div class="container-xxl mt-2 pb-4 bottom-bar">
+  <div class="row d-inline-flex mt-3">
+		<div class="col-sm-2 side-bar">
+			<img src="img/campuslifebutton.png" onmouseover="hover(this)" onmouseout="unhover(this)" class="img-responsive cat-button" id="campuslife" alt="campus life button">
+		</div>
+		<div class="col-sm article-left">
+			<img src="img/img1.jpg" class="img-fluid" alt="Responsive image">
+			<h4 class="headline">Headline headline headline</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="col-sm article">
+			<img src="img/img2.jpg" class="img-fluid" alt="Responsive image">
+			<h3 class="headline">Headline headline headline</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="col-sm article">
+			<h4 class="headline">Headline headline headline</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<!-- <div class="col-sm article">
+			<h4 class="headline">Headline headline headline</h3>
+			<p>The kiosk ordering screen</p>
+		</div> -->
+  </div>
+</div>
+<div class="container-lg mt-3">
+  <div class="row">
+    <div class="col">
+			<div class="row">
+				<div class="col-sm-2 side-bar">
+					button
+				</div>
+				<div class="col-sm article">
+					<img src="img/img1.jpg" class="img-fluid" alt="Responsive image">
+					<h4 class="headline">Headline headline headline</h3>
+					<p>The kiosk home screen</p>
+				</div>
+				<div class="col-sm article">
+					<h4 class="headline">Headline headline headline</h3>
+					<p>The kiosk ordering screen</p>
+				</div>
+				<div class="col-sm article">
+					<img src="img/img2.jpg" class="img-fluid" alt="Responsive image">
+					<h3 class="headline">Headline headline headline</h3>
+					<p>The kiosk ordering screen</p>
+				</div>
+			</div>			
+		</div>
+  </div>
+</div>
+</div>
+
+
+<!-- <nav class="navbar navbar-expand-sm navbar-dark center mt-5" id="navbar">
+  <div class="container-fluid">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="#top_header">Back to Top</a>
+      </li>
+    </ul>
+  </div>
+</nav>  -->
+
+<script>
+	function hover(element) {
+		if (element.id == "join") {
+			element.setAttribute('src', 'img/invjoin.png');
+		}
+		if (element.id == "about") {
+			element.setAttribute('src', 'img/invabout.png');
+		}
+		if (element.id == "latest") {
+			element.setAttribute('src', 'img/invlatest.png');
+		}
+		if (element.id == "campuslife") {
+			element.setAttribute('src', 'img/invcampuslife.png');
+		}
+		if (element.id == "offcampus") {
+			element.setAttribute('src', 'img/invoffcampus.png');
+		}
+	}
+
+	function unhover(element) {
+		if (element.id == "join") {
+			element.setAttribute('src', 'img/joinbutton.png');
+			console.log("unhover");
+		}
+		if (element.id == "about") {
+			element.setAttribute('src', 'img/aboutbutton.png');
+		}
+		if (element.id == "latest") {
+			element.setAttribute('src', 'img/latestbutton.png');
+		}
+		if (element.id == "campuslife") {
+			element.setAttribute('src', 'img/campuslifebutton.png');
+		}
+		if (element.id == "offcampus") {
+			element.setAttribute('src', 'img/offcampusbutton.png');
+		}
+	}
+
+	function changeSearch() {
+		console.log(document.getElementById("search").src)
+		if (document.getElementById("search").src.includes("img/searchbutton.png")){
+			document.getElementById("search").setAttribute("src", "img/selectedsearch.png");
+			console.log("search sel")
+		} else {
+			document.getElementById("search").setAttribute("src", "img/searchbutton.png");
+		}
+	}
+	
+
+
+</script>
+
+</body>
+</html>
